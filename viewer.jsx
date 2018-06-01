@@ -32,8 +32,8 @@ function Nav(props) {
     const languages = ["all", "javascript", "ruby", "python"];
 
     return (
-        <nav id="navbar">
-            <ul id="nav-ul">
+        <nav className="navbar">
+            <ul>
                 { languages.map((lang) => (
                     <li key= { lang } onClick= { () => props.onSelectLanguage(lang) }>
                         { lang }
