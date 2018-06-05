@@ -35,9 +35,9 @@ function Nav(props) {
         <nav className="navbar">
             <ul>
                 { languages.map((lang) => (
-                    <li key= { lang } onClick= { () => props.onSelectLanguage(lang) }>
+                    <button key= { lang } onClick= { () => props.onSelectLanguage(lang) }>
                         { lang }
-                    </li>    
+                    </button>    
                 )) }
             </ul>
         </nav>
@@ -46,9 +46,9 @@ function Nav(props) {
 
 function RepoGrid(props) {
     return (
-        <ul id="repogrid-ul" style = { { display: 'flex', flexWrap: 'wrap' } }>
+        <ul className="repo-grid">
             {props.repos.map(( { name, owner, stargazers_count, html_url } ) => (
-                <li key = { name } style = {{margin: 30}}>
+                <li key = { name } >
                     <ul>
                         <li><a href={ html_url }> {name} </a></li>
                         <li>@{ owner.login }</li>
