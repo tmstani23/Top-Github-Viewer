@@ -1,15 +1,15 @@
 body {
     padding: 0px;
-    color: orange;
+    color: #b12121;
     
-    background-color: black;
+    background-color: #030504;
     margin: 0 auto;
 }
 a {
-    color: white;
+    color: #c9cbc8;
 }
 a:hover {
-    color: orange;
+    color: #8c8c8c;
 }
 ul {
     list-style-type: none;
@@ -17,82 +17,91 @@ ul {
 .banner-div {
     background: #0F2027;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 200px;
-    
+    background: linear-gradient(to right, #c9cbc8, #8c8c8c, #030504); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 200px;
     padding: 5px;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .banner-div > h1 {
-    font-size: 42px;
+    font-size: 52px;
+    color: #030504;
 }
 .navbar {
-    display: flex;
-    background-color: grey;
-    height: 100px; 
-    font-size: 24px; 
+    display:flex;
+    background-color: #501b15;
+    font-size: 24px;
     justify-content: center;
-    align-items: center;
-    
+    border-bottom: solid 1px;
+    border-bottom-color: #c9cbc8;
+    border-top: solid 1px;
+    border-top-color: #c9cbc8
 }
 .navbar > ul {
     list-style-type: none;
-    display: flex;
-    padding: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .navbar > ul > button {
     margin: 10px;
     width: 150px;
     height: 50px;
-    border: 1px solid black;
+    border: 1px solid #8c8c8c;
     border-radius: 2px;
-    background-color: orange;
-    color: white;
+    background-color: #030504;
+    color: #c9cbc8;
     font-size: 24px;
+    
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .navbar > ul > button:hover {
-    background-color: black;
+    background-color: #c9cbc8;
     border-radius: 2px;
+    color: #030504;
     border: 1px white solid;
 }
 .repo-grid {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: black;
     background-position:50% 50%;
     background-image: url('img/codescreen.jpg');
     background-repeat: no-repeat;
     padding: 0px;
     justify-content:center;
-    border: solid 5px red;
+    align-items: center;
     margin: 0 auto;
     max-width: 1200px;
     
 }
 .repo-grid > li {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #0F2027;
+    background-color: #030504;
     text-align: center;
-    width: 130px;
-    border: solid 3px white;
+    height: 120px;
+    width: 150px;
+    border: solid 1px #c9cbc8;
     border-radius: 2px;
     margin: 10; 
     
 }
 .repo-grid > li > ul {
     padding: 10px;
-    flex: 1;
-    align-content: center;
+}
+.footer {
+    text-align: center;
+    border-top: 1px solid;
+    border-top-color: #c9cbc8;
+}
+.footer > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20 px;
 }
 #app {
-    margin: 0;
-    align-items: center;
-    border: solid 5px blue;
-      
+    margin: 0;   
 }

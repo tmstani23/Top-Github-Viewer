@@ -29,7 +29,7 @@ class Loading extends React.Component {
 
 
 function Nav(props) {
-    const languages = ["all", "javascript", "ruby", "python"];
+    const languages = ["All", "Javascript", "Ruby", "Python"];
 
     return (
         <nav className="navbar">
@@ -67,7 +67,7 @@ class App extends React.Component {
         
         this.state = {
             repos: [],
-            activeLanguage: "all",
+            activeLanguage: "All",
             loading: true
         };
         //Bind App methods within the constructor:
