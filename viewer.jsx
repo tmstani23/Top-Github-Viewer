@@ -20,7 +20,7 @@ class Loading extends React.Component {
     }
     render() {
         return (
-        <p>
+        <p className = "loading-p">
             {this.state.text}
         </p>
         )
@@ -52,7 +52,7 @@ function RepoGrid(props) {
                     <ul>
                         <li><a href={ html_url }> {name} </a></li>
                         <li>@{ owner.login }</li>
-                        <li>{ stargazers_count }</li>
+                        <li id="stargazers-li">{ stargazers_count }</li>
                     </ul>
                 </li>
             ))}
@@ -111,7 +111,7 @@ class App extends React.Component {
             { this.state.loading === true 
                 ? <Loading />
                 : <div>
-                    <h1 style = { {textAlign: "center"} }>
+                    <h1 id = "lang-header">
                     { this.state.activeLanguage }
                     </h1>
                     <RepoGrid repos = { this.state.repos }/>
