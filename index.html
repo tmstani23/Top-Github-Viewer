@@ -1,0 +1,52 @@
+
+<html>
+    <head>
+      <title>Top Github Viewer</title>
+      <meta charset="UTF-8">
+      <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+      <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+      <script src='https://unpkg.com/babel-standalone@6/babel.min.js'></script>
+      <script src="viewer.jsx" type="text/babel"></script>
+      <link rel="stylesheet" href="index.css"> 
+    </head>
+    <body>
+      
+      <div class ="banner-div">
+        <h1>Top Github Viewer</h1>
+        <h3>A dashboard that displays the top Github repositories for Javascript, Python, Ruby. </h3>
+      </div> 
+      
+      <div id='app'></div>
+      <div class ='footer'>
+        <h3>Visit me:</h3>
+        <div>
+          <a href="https://github.com/tmstani23">Github</a>
+          <a href="https://codepen.io/tmstani23/">Codepen</a>
+          <a href="https://www.linkedin.com/in/timothy-stanislav-54874b13/">Linkedin</a>
+        </div>
+        <p>This site was built with React, Babel, HTML and CSS <br>
+          Created by: Timothy Stanislav - IndoorKin Productions &copy;</p>
+      </div>
+      
+      
+      
+      
+      <script>
+        window.API = {
+          fetchPopularRepos(language) {
+            // "language" can be "javascript", "ruby", "python", or "all"
+            const encodedURI = encodeURI(`https://api.github.com/search/repositories?q=stars:>1+language:${language}&sort=stars&order=desc&type=Repositories`)
+            return fetch(encodedURI)
+              .then((data) => data.json())
+              .then((repos) => repos.items)
+              .catch((error) => {
+                console.warn(error)
+                return null
+              });
+          }
+        }
+      </script>
+    
+      
+    </body>
+</html>

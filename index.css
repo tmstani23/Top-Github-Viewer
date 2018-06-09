@@ -1,0 +1,167 @@
+body {
+    padding: 0px;
+    color: #b12121;
+    font-size: 20px;
+    font-family: batmanFont;
+    background-color: #030504;
+    margin: 0 auto;
+}
+@font-face {
+    font-family: batmanFont;
+    src: url("fonts/batmfa__.ttf");
+}
+@font-face {
+    font-family: batmanFont2;
+    src: url("fonts/batmfo__.ttf");
+}
+@font-face {
+    font-family: starFont;
+    src: url("fonts/Starjhol.ttf");
+}
+
+a {
+    color: #c9cbc8;
+    font-size: 20px;
+    font-family: starFont;
+}
+a:hover {
+    color: #8c8c8c;
+}
+h3 {
+    font-size: 26px;
+    font-family: starFont;
+}
+ul {
+    list-style-type: none;
+}
+.loading-p {
+    font-size: 42px;
+    margin: 0 auto;
+    text-align: center;
+    color: #c9cbc8;
+}
+.banner-div {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c9cbc8, #8c8c8c, #030504);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c9cbc8, #8c8c8c, #030504); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 200px;
+    padding:20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.banner-div > h1 {
+    font-size: 120px;
+    font-family: batmanFont;
+    color: #030504;
+    text-shadow: 2px 2px #c9cbc8;
+}
+.navbar {
+    display:flex;
+    background-color: #501b15;
+    font-size: 24px;
+    justify-content: center;
+    border-bottom: solid 1px;
+    border-bottom-color: #c9cbc8;
+    border-top: solid 1px;
+    border-top-color: #c9cbc8
+}
+.navbar > ul {
+    list-style-type: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.navbar > ul > button {
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    font-family: batmanFont2;
+    border: 1px solid #8c8c8c;
+    border-radius: 2px;
+    background-color: #030504;
+    color: #c9cbc8;
+    font-size: 24px;
+    
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navbar > ul > button:hover {
+    background-color: #c9cbc8;
+    border-radius: 2px;
+    color: #030504;
+    border: 1px #c9cbc8 solid;
+}
+.repo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-position:50% 50%;
+    background-image: url('img/codescreen.jpg');
+    background-repeat: no-repeat;
+    padding: 0px;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1600px;
+    
+}
+.repo-grid > li {
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-color: #030504;
+    text-align: center;
+    height: 175px;
+    width: 275px;
+    border: solid 1px #c9cbc8;
+    border-radius: 2px;
+    margin: 10;
+     
+    
+}
+.repo-grid > li > ul {
+    padding: 30px;
+    
+}
+.footer {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    border-top: 1px solid;
+    border-top-color: #c9cbc8;
+}
+.footer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20 px;
+}
+#stargazers-li {
+    font-size: 22px;
+    color:#8c8c8c;
+    animation: pulse 5s infinite;
+    width: 75%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+@keyframes pulse {
+    0% {
+        color: #030504;
+        background-color: #c9cbc8;
+    }
+    100% {
+        color: #8c8c8c;
+        background-color: #501b15;
+    }
+}
+#app {
+    margin: 0 auto;   
+}
+ #lang-header {
+    font-size: 42px;
+    font-family: starFont;
+    color: #c9cbc8;
+    text-align: center;
+}
