@@ -25,5 +25,7 @@ https://codepen.io/tmstani23/full/vjqwKJ/
 
 # Screenshots:
 ![Alt text](https://raw.githubusercontent.com/tmstani23/Top-Github-Viewer/Development/img/ss1.jpg)
+
 ![Alt text](https://raw.githubusercontent.com/tmstani23/Top-Github-Viewer/Development/img/ss2.jpg)
+
 ![Alt text](https://raw.githubusercontent.com/tmstani23/Top-Github-Viewer/Development/img/ss3.jpg)
